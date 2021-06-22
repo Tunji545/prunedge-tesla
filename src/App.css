@@ -1,38 +1,133 @@
-.App {
+html {
+  font-size: 65%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/***************************************** NAV ******************************************/
+
+img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: -2rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  margin-right: 10rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  background-color: #d0dee9;
+  color: #888;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+ul.nav-middle,
+ul.nav-right {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+ul.nav-middle li:hover,
+ul.nav-right li:hover {
+  background-color: lightgray;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+
+ul li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+ul.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666;
+  position: relative;
+  right: 3rem;
+}
+
+ul.footer li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 10rem;
+}
+
+/********************************* HOME ********************************************/
+
+.img-bg1-home {
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop');
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #d0dee9;
+  position: relative;
+}
+
+.h1-home {
+  letter-spacing: 0.3rem;
+  font-size: 4.5rem;
+  color: #444;
+  text-align: center;
+  padding-top: 4.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-home {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: #888;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-home span {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  display: inline-block;
+  padding: 1.5rem 7rem;
+  margin-right: 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button.bg-black {
+  background-color: #444;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-div {
+  position: absolute;
+  bottom: 10rem;
+  left: 50rem;
 }
