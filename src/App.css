@@ -245,7 +245,7 @@ button.bg7-black {
   text-align: center;
   position: absolute;
   top: 60rem;
-  left: 60rem;
+  left: 55rem;
 }
 
 .btn7-div {
@@ -255,8 +255,7 @@ button.bg7-black {
 }
 
 ul.footer {
-  position: relative;
-  bottom: 10rem;
+  margin-top: 1rem;
 }
 
 /***************************MOBILE VERSION **********************/
