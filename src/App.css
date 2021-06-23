@@ -132,15 +132,15 @@ button.bg-black {
 .btn-div {
   position: absolute;
   bottom: 10rem;
-  left: 50rem;
+  left: 40rem;
 }
 
 img.arrow {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  bottom: 3rem;
-  left: 71rem;
+  bottom: 5rem;
+  left: 61rem;
 }
 
 .img-bg2-home {
