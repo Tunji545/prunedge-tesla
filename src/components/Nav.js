@@ -12,6 +12,7 @@ const Nav = () => {
       <Link to='/'>
         <img src={Logo} alt='tesla-9-logo.png' width='100' height='100' />
       </Link>
+      <h1 class='display'>Menu</h1>
       <ul className='nav-middle'>
         <Link style={navLink} to='/models'>
           <li>ModelS</li>

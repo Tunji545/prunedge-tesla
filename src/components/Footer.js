@@ -5,12 +5,22 @@ const Footer = () => {
     <ul className='footer'>
       <li>Tesla &copy; 2021</li>
       <li>Privacy &amp; Legal</li>
-      <li>Contact</li>
-      <li>Careers</li>
-      <li>Get Newsletter</li>
       <li>News</li>
-      <li>Forums</li>
-      <li>Locations</li>
+      <li>
+        <span className='footer-M'>Contact</span>
+      </li>
+      <li>
+        <span className='footer-M'>Careers</span>
+      </li>
+      <li>
+        <span className='footer-M'>Get Newsletter</span>
+      </li>
+      <li>
+        <span className='footer-M'>Forums</span>
+      </li>
+      <li>
+        <span className='footer-M'>Locations</span>
+      </li>
     </ul>
   );
 };
