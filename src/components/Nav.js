@@ -1,19 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../images/tesla-9-logo.png';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+  let [scrolled, setScroll] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 2) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
   const navLink = {
     color: '#222',
     textDecoration: 'none',
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
+
   return (
-    <nav>
+    <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <Link to='/'>
-        <img src={Logo} alt='tesla-9-logo.png' width='100' height='100' />
+        <img
+          src={Logo}
+          alt='tesla-9-logo.png'
+          width='100'
+          height='100'
+          className='logo'
+        />
       </Link>
       <h1 class='display'>Menu</h1>
-      <ul className='nav-middle'>
+      <ul className='nav-middle navigation'>
         <Link style={navLink} to='/models'>
           <li>ModelS</li>
         </Link>

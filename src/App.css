@@ -14,16 +14,6 @@ body {
 }
 
 /***************************************** NAV ******************************************/
-
-img {
-  width: 10rem;
-  height: 10rem;
-  margin-top: -2rem;
-  margin-left: 4rem;
-  cursor: pointer;
-  margin-right: 10rem;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -34,6 +24,16 @@ nav {
   padding-left: 3rem;
   padding-right: 3rem;
   width: 100vw;
+  height: 11vh;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: -2rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  margin-right: 10rem;
 }
 
 h1.display {
@@ -46,8 +46,6 @@ ul.nav-right {
   list-style-type: none;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  bottom: 1rem;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   cursor: pointer;
@@ -77,6 +75,14 @@ ul.footer li {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 10rem;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: transparent;
 }
 
 /********************************* HOME ********************************************/
@@ -130,6 +136,12 @@ button.bg-black {
 }
 
 .btn-div {
+  position: absolute;
+  bottom: 10rem;
+  left: 40rem;
+}
+
+.btn5-div {
   position: absolute;
   bottom: 10rem;
   left: 40rem;
@@ -199,7 +211,7 @@ img.arrow {
 }
 
 .img-bg7-home {
-  background-image: url('//tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories');
+  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories');
   background-position: center;
   height: 100vh;
   width: 100vw;
@@ -259,7 +271,7 @@ ul.footer {
 }
 
 /***************************MOBILE VERSION **********************/
-@media (max-width: 576px) {
+@media (max-width: 350px) {
   img {
     width: 10rem;
     height: 10rem;
@@ -301,7 +313,7 @@ ul.footer {
   }
 
   .img-bg2-home {
-    background-image: url('//tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY');
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY');
   }
 
   .img-bg3-home {
@@ -374,17 +386,16 @@ ul.footer {
     margin-right: auto;
     color: white;
     position: absolute;
-    bottom: 10rem;
+    top: 40rem;
     left: 1.5rem;
-    margin-bottom: 3rem;
+    padding: 1.5rem 4rem;
   }
 
   ul.footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* position: absolute;
-    top: 0rem; */
+    margin-top: 5rem;
   }
 
   ul.footer li {
@@ -393,5 +404,333 @@ ul.footer {
 
   span.footer-M {
     display: none;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 576px) {
+  img {
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    position: relative;
+    right: 5rem;
+    top: 1rem;
+  }
+
+  ul.nav-middle,
+  ul.nav-right {
+    display: none;
+  }
+
+  h1.display {
+    display: block;
+  }
+
+  img.arrow {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 65rem;
+    left: 12rem;
+  }
+
+  .h1-home {
+    font-size: 3.6rem;
+    padding-top: 8rem;
+  }
+
+  .h1Y-home {
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .img-bg1-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile');
+  }
+
+  .img-bg2-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY');
+  }
+
+  .img-bg3-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/fdedb888-973c-45ec-965c-0958d39d08b4/bvlatuR/std/600x1576/M3-Homepage-M');
+  }
+
+  .img-bg4-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/deedff20-4856-4e1f-8828-af2c08de154a/bvlatuR/std/600x1576/ModelX-Homepage-M');
+  }
+
+  .img-bg5-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/c5d91ed2-bf19-425c-b8e5-f5d16a7cd7d2/bvlatuR/std/800x2100/sp_homepage_m');
+  }
+
+  .img-bg6-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/f68100af-aabb-42b8-8186-67907284b7dd/bvlatuR/std/800x1700/solar-roof-hero-mobile');
+  }
+
+  .img-bg7-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/69095129-86c5-4f6c-a77a-740ceac04e82/bvlatuR/std/800x2100/Mobile-Accessories');
+    position: relative;
+  }
+
+  .btn-div {
+    position: absolute;
+    bottom: 9rem;
+    left: 2rem;
+  }
+
+  .btn5-div {
+    position: absolute;
+    bottom: 9rem;
+    left: 4rem;
+  }
+
+  button {
+    padding: 1.5rem 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 300;
+    width: 90%;
+  }
+
+  .btnY-div {
+    position: absolute;
+    bottom: 7rem;
+    left: 2rem;
+  }
+
+  .btn7-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 2rem;
+  }
+
+  button.bg-black {
+    background-color: #444;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .h7-home {
+    padding-top: 10rem;
+    padding-bottom: 0.5rem;
+    font-size: 3.2rem;
+  }
+
+  button.bg7-black {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    position: absolute;
+    top: 60rem;
+    left: 1.5rem;
+    padding: 1.5rem 4rem;
+  }
+
+  ul.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 5rem;
+  }
+
+  ul.footer li {
+    margin-top: 1rem;
+  }
+
+  span.footer-M {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  ul.nav-middle,
+  ul.nav-right {
+    display: none;
+  }
+
+  h1.display {
+    display: block;
+  }
+
+  .img-bg1-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/ba3606ef-ce2d-41e4-90aa-bb13d767bb1a/bvlatuR/std/1000x1576/ms-homepage-mobile');
+  }
+
+  .img-bg2-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3304be3b-dd0a-4128-9c26-eb61c0b98d61/bvlatuR/std/800x2100/Mobile-ModelY');
+  }
+
+  .img-bg3-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/fdedb888-973c-45ec-965c-0958d39d08b4/bvlatuR/std/600x1576/M3-Homepage-M');
+  }
+
+  .img-bg4-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/deedff20-4856-4e1f-8828-af2c08de154a/bvlatuR/std/600x1576/ModelX-Homepage-M');
+  }
+
+  .img-bg5-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/c5d91ed2-bf19-425c-b8e5-f5d16a7cd7d2/bvlatuR/std/800x2100/sp_homepage_m');
+  }
+
+  .img-bg6-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/f68100af-aabb-42b8-8186-67907284b7dd/bvlatuR/std/800x1700/solar-roof-hero-mobile');
+  }
+
+  .img-bg7-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/69095129-86c5-4f6c-a77a-740ceac04e82/bvlatuR/std/800x2100/Mobile-Accessories');
+  }
+
+  img.arrow {
+    position: absolute;
+    left: 28rem;
+  }
+
+  .btn-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 7rem;
+  }
+
+  .btnY-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 7rem;
+  }
+
+  .btn5-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+  }
+
+  button.bg7-black {
+    position: absolute;
+    top: 85rem;
+    left: 27rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  ul.nav-middle,
+  ul.nav-right {
+    display: none;
+  }
+
+  h1.display {
+    display: block;
+  }
+
+  .img-bg1-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop');
+  }
+
+  .img-bg2-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY');
+  }
+
+  .img-bg3-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D');
+  }
+
+  .img-bg4-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D');
+  }
+
+  .img-bg5-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a86dcec8-ff70-4ae5-b1b2-d598575698bc/bvlatuR/std/2880x1800/us_homepage_sp_hero_d?quality=70');
+  }
+
+  .img-bg6-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/27ae57a3-3a1d-480c-b557-cd9caf51b96e/bvlatuR/std/2880x1620/solar-roof-hero-desktop?quality=70');
+  }
+
+  .img-bg7-home {
+    background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories');
+  }
+
+  img.arrow {
+    position: absolute;
+    left: 31rem;
+  }
+
+  .btn-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+  }
+
+  .btnY-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+  }
+
+  .btn5-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 15rem;
+  }
+
+  button.bg7-black {
+    position: absolute;
+    top: 85rem;
+    left: 27rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  ul.nav-middle,
+  ul.nav-right {
+    display: none;
+  }
+
+  h1.display {
+    display: block;
+    padding-right: 4rem;
+  }
+
+  .h1-home {
+    padding-top: 7rem;
+    padding-bottom: 0.5rem;
+  }
+  .h1Y-home {
+    padding-top: 7rem;
+    padding-bottom: 0.5rem;
+  }
+
+  img.arrow {
+    position: absolute;
+    left: 48rem;
+  }
+
+  .btn-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 27rem;
+  }
+
+  .btnY-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 27rem;
+  }
+
+  .btn5-div {
+    position: absolute;
+    bottom: 10rem;
+    left: 27rem;
+  }
+
+  button.bg7-black {
+    position: absolute;
+    top: 60rem;
+    left: 45rem;
   }
 }

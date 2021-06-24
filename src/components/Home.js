@@ -1,7 +1,13 @@
 import React from 'react';
 import arrow from '../images/arrowhead.png';
+import { useSpring, animated } from 'react-spring';
 
 const Home = () => {
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 1000,
+  });
   return (
     <>
       <div className='img-bg1-home'>
@@ -13,12 +19,13 @@ const Home = () => {
           <button className='bg-black'>custom order</button>
           <button>Existing Inventary</button>
         </div>
-        <img
+        <animated.img
           src={arrow}
           alt='arrowhead.png'
           width='20'
           height='20'
           className='arrow'
+          style={props}
         />
       </div>
       <div className='img-bg2-home'>
@@ -54,7 +61,7 @@ const Home = () => {
       <div className='img-bg5-home'>
         <h1 className='h1-home'>Solar Panels</h1>
         <p className='p-home'>Lowest cost lowest panels in America</p>
-        <div className='btn-div'>
+        <div className='btn5-div'>
           <button className='bg-black'>order now</button>
           <button>learn more</button>
         </div>
@@ -62,7 +69,7 @@ const Home = () => {
       <div className='img-bg6-home'>
         <h1 className='h1-home'>Solar Roofs</h1>
         <p className='p-home'>Produce clean energy from your roof.</p>
-        <div className='btn-div'>
+        <div className='btn5-div'>
           <button className='bg-black'>order now</button>
           <button>learn more</button>
         </div>
